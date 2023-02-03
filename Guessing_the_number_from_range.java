@@ -1,10 +1,10 @@
+// Import the required libraries
 import java.util.*;
-
-import javax.lang.model.util.ElementScanner14;
 
 
 public class Guessing_the_number_from_range
 {
+    // function To generate random number between the given range
     public static int getRandomNumber(int min, int max) 
     {
     Random random = new Random();
@@ -12,7 +12,7 @@ public class Guessing_the_number_from_range
     }
   public static void main(String[] args) 
   {
-    
+    // Explaination of the game
     System.out.println("----------------Welcome to the game of Guessing The Number----------------");
     System.out.println();
     System.out.println("Hello Gamer");
@@ -45,6 +45,7 @@ public class Guessing_the_number_from_range
      int guess=sc.nextInt();
      if(guess==0)
      {
+         // explaination of game with an example
         System.out.println();
         System.out.println("Don't take tension I will give you an example so you can understand game easily"); 
         System.out.println("lets take an exmple if you entered 1 and 20 as two random numbers");
@@ -57,6 +58,7 @@ public class Guessing_the_number_from_range
 
 
    System.out.println();
+    // Tajking input from the gamer
    System.out.println("Enter the two numbers to let computer generate random number between them");
    System.out.print("Enter the first_no  ::");
    int first_no=sc.nextInt();
@@ -77,6 +79,7 @@ public class Guessing_the_number_from_range
    int score=0;
    while(round!=6)
    {
+     // Checking if guessed number is correct or not
     System.out.println();
     System.out.print("Guess the number between ( "+Math.min(first_no,second_no)+"-"+Math.max(first_no,second_no)+" )  ::");
     int guessed_number=sc.nextInt();
